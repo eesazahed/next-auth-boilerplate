@@ -8,18 +8,17 @@ body {
   margin: 0;
   font-family: sans-serif;
   background-color: white;
-  color: black;
 }
 
 a {
-  color: #0070f3;
+  color: #0092f3;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
-/* 
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -28,7 +27,4 @@ a {
     color: white;
     background: #222222;
   }
-  a {
-    color: #0092f3;
-  }
-} */
+}
