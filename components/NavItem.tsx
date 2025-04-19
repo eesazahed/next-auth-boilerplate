@@ -26,7 +26,7 @@ const NavItem: NextPage<Props> = ({ text, href, auth }) => {
           onClick={
             session.status === "authenticated"
               ? () => signOut()
-              : () => signIn()
+              : () => signIn("google", { callbackUrl: "/" })
           }
           className="block px-3 md:px-5 py-4 rounded-xl hover:bg-gray-700 cursor-pointer duration-100 text-white whitespace-nowrap"
         >
