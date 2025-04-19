@@ -19,7 +19,7 @@ const App = ({
         <TopNav />
       </div>
 
-      <div className="pt-16 pb-32 mx-8 text-center leading-8 text-xl min-h-screen overflow-y-auto">
+      <div className="pt-32 pb-32 mx-8 text-center leading-8 text-xl min-h-screen overflow-y-auto">
         <Component {...pageProps} />
       </div>
 
