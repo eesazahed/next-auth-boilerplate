@@ -14,14 +14,20 @@ const App = ({
   session: Session;
 }>) => (
   <SessionProvider session={pageProps.session}>
-    <div className="md:flex md:flex-col-reverse">
-      <TopNav />
-      <div className="mx-8 text-center p-16 leading-8 text-xl min-h-screen">
+    <div className="md:flex md:flex-col-reverse relative">
+      <div className="fixed top-0 left-0 right-0 z-50 md:static">
+        <TopNav />
+      </div>
+
+      <div className="pt-16 pb-32 mx-8 text-center leading-8 text-xl min-h-screen overflow-y-auto">
         <Component {...pageProps} />
       </div>
-      <Navbar />
+
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:static">
+        <Navbar />
+      </div>
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </SessionProvider>
 );
 
