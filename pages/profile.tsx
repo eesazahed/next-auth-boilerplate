@@ -29,6 +29,7 @@ const Profile: NextPage<Props> = ({ user }) => {
         {user && (
           <div>
             <p>Logged in as {user.name}</p>
+            <br />
             <p>
               Joined <FormattedTime timestamp={user.createdAt} />
             </p>
