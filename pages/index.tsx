@@ -13,11 +13,17 @@ const Home: NextPage<Props> = ({ user }) => {
       <PageHead title="Home" />
 
       <main>
-        <Title text="next-auth-boilerplate" emoji="&#128075;" gradient />
+        <Title text="example" gradient />
 
-        <p>Welcome</p>
-
-        {user && <p>Logged in as {user.name}</p>}
+        {user ? (
+          <div>
+            <p>Logged in as {user.name}</p>
+          </div>
+        ) : (
+          <div>
+            <p>You must log in</p>
+          </div>
+        )}
       </main>
     </div>
   );
